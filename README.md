@@ -4,6 +4,26 @@
 
 主要结构体为`Message`，对应一条完整的SDP信息。
 
+### 使用方法
+
+在Go中引用本库：
+
+```go
+import "gitee.com/xiaochengtech/sdp"
+```
+
+生成一个消息对象，解析外部收到的字符串：
+
+```go
+sdpMsg, err := sdp.NewMessage(transferString)
+```
+
+将消息对象转换为字符串用于传输：
+
+```go
+transferString := sdpMsg.String()
+```
+
 ### TODO
 
 - [ ] 增加完整的字段支持。
