@@ -76,7 +76,7 @@ func (m *Message) parse(str string) (err error) {
 			continue
 		}
 		// 解析行的key和value
-		key, value, e := parse(content)
+		key, value, e := parse(TrimSpace(content))
 		if e != nil {
 			err = e
 			return

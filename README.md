@@ -9,7 +9,7 @@
 在Go中引用本库：
 
 ```go
-import "gitee.com/xiaochengtech/sdp"
+import "github.com/nfsq246/sdp"
 ```
 
 生成一个消息对象，解析外部收到的字符串：
@@ -27,6 +27,10 @@ transferString := sdpMsg.String()
 ### TODO
 
 - [ ] 增加完整的字段支持。
+
+### change
+
+增加了删除前后多余垃圾字符
 
 ### 参考资料
 
